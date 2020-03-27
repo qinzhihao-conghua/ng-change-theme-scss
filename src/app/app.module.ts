@@ -7,6 +7,10 @@ import { MiddleComponent } from './middle/middle.component';
 import { BottomComponent } from './bottom/bottom.component';
 import { RoutingModule } from './routing/main.module';
 import { ContentDetailComponent } from './content-detail/content-detail.component';
+import { TreeViewModule } from '@progress/kendo-angular-treeview';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
 
 @NgModule({
   declarations: [
@@ -18,7 +22,9 @@ import { ContentDetailComponent } from './content-detail/content-detail.componen
   ],
   imports: [
     BrowserModule,
-    RoutingModule
+    RoutingModule,
+    TreeViewModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
