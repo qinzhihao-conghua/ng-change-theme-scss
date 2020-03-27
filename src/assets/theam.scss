@@ -1,0 +1,75 @@
+$root-light-color:#f5f5f5 !default;
+$root-dark-color:#565656 !default;
+
+$first-light-color:#fff !default;
+$first-dark-color:#ccc !default;
+
+$second-light-color:#f2efeffa !default;
+$second-dark-color:#e8e6b2 !default;
+
+@mixin light-theme() {
+
+  // 主题1
+  [ds-theme="light"] & {
+    :target {
+      border: 1px solid #FF9800;
+      box-shadow: 0 0 8px 2px #FF9800;
+    }
+
+    // body层级
+    background-color: $root-light-color;
+
+    // 一级层级
+    .first-level-theme {
+      background-color: $first-light-color;
+    }
+
+    // 二级层级
+    .second-level-theme {
+      background-color: $second-light-color;
+
+      // 其他
+      a {
+        color: #ff521b;
+      }
+    }
+
+  }
+}
+
+@mixin dark-theme {
+
+  // 主题2
+  [ds-theme="dark"] & {
+    :target {
+      border: 1px solid rgb(119, 0, 255);
+      box-shadow: 0 0 8px 2px rgb(119, 0, 255);
+    }
+
+    // body层级
+    background-color: $root-dark-color;
+
+    // 一级层级
+    .first-level-theme {
+      background-color: $first-dark-color;
+      color: #f43636;
+    }
+
+    // 二级层级
+    .second-level-theme {
+      background-color: $second-dark-color;
+
+      a {
+        color: #da04f4;
+        font-size: 20px;
+      }
+    }
+
+  }
+}
+
+@mixin bg-color() {
+  @include light-theme();
+  @include dark-theme();
+  // 如果还有其他主题，依次往下写
+}

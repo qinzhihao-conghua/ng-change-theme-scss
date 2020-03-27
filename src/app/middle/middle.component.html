@@ -1,0 +1,19 @@
+<div class="middle">
+  <div class="middle-left first-level-theme ">
+    <ul class="left-content .second-level-theme">
+      <li class="left-list second-level-theme" *ngFor="let item of [1,2,3,4,5,6]">
+        <a href="#{{item}}">左侧{{item}}</a>
+      </li>
+    </ul>
+  </div>
+  <div class="middle-right first-level-theme ">
+    <ul class="right-content">
+      <li id="{{item}}" class="second-level-theme" *ngFor="let item of [1,2,3,4,5,6]">
+        <a href="#{{item}}" [routerLink]="['/test']">右侧{{item}}</a>
+      </li>
+    </ul>
+    <div class="right-content-bottom">
+
+    </div>
+  </div>
+</div>
