@@ -1,6 +1,3 @@
 @import './assets/base-style.scss';
 @import './assets/theam.scss';
-
-.root-level-theme {
-  @include bg-color();
-}
+@import './assets//all.min.css';

@@ -1,0 +1,13 @@
+@import '../../../assets//comp-style.scss';
+@include comp-base('.btn');
+
+.btn {
+  width: 100px;
+  height: 5vh;
+  border: none;
+  margin: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #6af058;
+}

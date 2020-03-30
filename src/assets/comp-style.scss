@@ -1,0 +1,12 @@
+$comp-light-color:rgb(252, 248, 30) !default;
+$comp-dark-color:rgb(244, 26, 252) !default;
+
+@mixin comp-base($class-name) {
+  [zh-theme="light"] #{$class-name} {
+    background-color: $comp-light-color;
+  }
+
+  [zh-theme="dark"] #{$class-name} {
+    background-color: $comp-dark-color;
+  }
+}

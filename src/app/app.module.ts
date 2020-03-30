@@ -2,13 +2,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { MiddleComponent } from './middle/middle.component';
-import { BottomComponent } from './bottom/bottom.component';
 import { RoutingModule } from './routing/main.module';
-import { ContentDetailComponent } from './content-detail/content-detail.component';
 import { TreeViewModule } from '@progress/kendo-angular-treeview';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HeaderComponent } from './views/header/header.component';
+import { MiddleComponent } from './views/middle/middle.component';
+import { BottomComponent } from './views/bottom/bottom.component';
+import { ContentDetailComponent } from './views/content-detail/content-detail.component';
+import { BottonComponent } from './comp/botton/botton.component';
 
 
 
@@ -18,7 +19,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HeaderComponent,
     MiddleComponent,
     BottomComponent,
-    ContentDetailComponent
+    ContentDetailComponent,
+    BottonComponent
   ],
   imports: [
     BrowserModule,

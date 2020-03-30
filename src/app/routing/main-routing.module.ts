@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { MiddleComponent } from '../middle/middle.component';
-import { ContentDetailComponent } from '../content-detail/content-detail.component';
+import { MiddleComponent } from '../views/middle/middle.component';
+import { ContentDetailComponent } from '../views/content-detail/content-detail.component';
 
 const routes: Routes = [
   { path: '', component: MiddleComponent },
