@@ -1,0 +1,78 @@
+{
+  "_from": "@progress/kendo-theme-default@latest",
+  "_id": "@progress/kendo-theme-default@4.14.0",
+  "_inBundle": false,
+  "_integrity": "sha512-yzwcYkRfP+1TrHyaa2HT+cmOoLkWnPVKRJAf//ZqNNqkB4n6gjnAJcvC8kFxhWH2VJ3pFuc7y3oQC6ywL8LgnA==",
+  "_location": "/@progress/kendo-theme-default",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@progress/kendo-theme-default@latest",
+    "name": "@progress/kendo-theme-default",
+    "escapedName": "@progress%2fkendo-theme-default",
+    "scope": "@progress",
+    "rawSpec": "latest",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@progress/kendo-theme-default/-/kendo-theme-default-4.14.0.tgz",
+  "_shasum": "83d3eebb436d0d851d34491c0ff95c0844d063b4",
+  "_spec": "@progress/kendo-theme-default@latest",
+  "_where": "E:\\WEB\\AngularProject\\change-theme",
+  "author": {
+    "name": "Progress"
+  },
+  "bugs": {
+    "url": "https://github.com/telerik/kendo-themes/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "SASS resources for the default Kendo UI theme",
+  "devDependencies": {
+    "@progress/kendo-theme-tasks": "^0.5.1",
+    "bootstrap": "^4.4.1",
+    "gulp": "^4.0.2"
+  },
+  "files": [
+    "dist/",
+    "scss/",
+    "modules/"
+  ],
+  "homepage": "https://github.com/telerik/kendo-themes#readme",
+  "keywords": [
+    "Kendo UI",
+    "Theme"
+  ],
+  "license": "Apache-2.0",
+  "main": "dist/all.css",
+  "name": "@progress/kendo-theme-default",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/telerik/kendo-themes.git"
+  },
+  "sass": "scss/all.scss",
+  "scripts": {
+    "api": "gulp api",
+    "api-check": "gulp api:check",
+    "ci": "gulp ci",
+    "ci:full": "gulp ci:full",
+    "dart": "gulp dart",
+    "dart:swatches": "gulp dart:swatches",
+    "dart:watch": "gulp dart:watch",
+    "embed-assets": "gulp assets",
+    "lint": "gulp lint",
+    "prepublishOnly": "gulp prepublish",
+    "sass": "gulp sass",
+    "sass:swatches": "gulp sass:swatches",
+    "sass:watch": "gulp sass:watch",
+    "twbs-compat": "gulp sass --file ./build/twbs-compat.scss"
+  },
+  "version": "4.14.0"
+}

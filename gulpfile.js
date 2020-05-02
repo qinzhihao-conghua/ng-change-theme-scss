@@ -4,7 +4,7 @@ const minifyCss = require("gulp-clean-css");
 const renameCss = require("gulp-rename");
 
 gulp.task("sass", function () {
-    return gulp.src("./node_modules/@progress/kendo-theme-default/scss/all.scss")
+    return gulp.src("./src/assets/kendo-theme-default/scss/all.scss")
         .pipe(sass())
         .pipe(gulp.dest("dist"))
         .pipe(minifyCss())

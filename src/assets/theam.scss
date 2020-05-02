@@ -29,6 +29,7 @@ $a-dark-color:#da04f4 !default;
   // 二级层级
   .second-level-theme {
     background-color: $second-light-color;
+    border-color: red;
 
     // 其他
     a {
