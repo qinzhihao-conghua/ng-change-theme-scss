@@ -8,9 +8,18 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './views/header/header.component';
 import { MiddleComponent } from './views/middle/middle.component';
 import { BottomComponent } from './views/bottom/bottom.component';
-import { ContentDetailComponent } from './views/content-detail/content-detail.component';
 import { BottonComponent } from './comp/botton/botton.component';
+import { CommonComponent } from './views/content-detail/common/common.component';
+import { ZhFontComponent } from './views/content-detail/zh-font/zh-font.component';
+import { KendouiComponent } from './views/content-detail/kendoui/kendoui.component';
+import { NgZorroComponent } from './views/content-detail/ng-zorro/ng-zorro.component';
+import { DialogsModule } from '@progress/kendo-angular-dialog';
+import { registerLocaleData } from '@angular/common';
+import { NZ_I18N, zh_CN, NgZorroAntdModule } from 'ng-zorro-antd';
+import zh from '@angular/common/locales/zh';
+import { HttpClientModule } from '@angular/common/http';
 
+registerLocaleData(zh);
 
 
 @NgModule({
@@ -19,16 +28,24 @@ import { BottonComponent } from './comp/botton/botton.component';
     HeaderComponent,
     MiddleComponent,
     BottomComponent,
-    ContentDetailComponent,
-    BottonComponent
+    BottonComponent,
+    CommonComponent,
+    ZhFontComponent,
+    KendouiComponent,
+    NgZorroComponent
   ],
   imports: [
     BrowserModule,
     RoutingModule,
     TreeViewModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    DialogsModule,
+    NgZorroAntdModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    { provide: NZ_I18N, useValue: zh_CN }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

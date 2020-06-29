@@ -1,0 +1,92 @@
+// 亮
+$light-container-bg:rgb(155, 71, 252);
+$light-container-text:#050505;
+$light-item-default-bg:#ffffff;
+$light-item-default-text:#000;
+$light-item-selected-bg:#FFEB3B;
+$light-item-selected-text:#050505;
+$light-item-hover-bg:#8BC34A;
+$light-item-hover-text:#fbfbfb;
+// 暗
+$dark-container-bg:#6472f1;
+$dark-container-text:#050505;
+$dark-item-default-bg:#ffffff;
+$dark-item-default-text:#000;
+$dark-item-selected-bg:#FFEB3B;
+$dark-item-selected-text:#050505;
+$dark-item-hover-bg:#8BC34A;
+$dark-item-hover-text:#fbfbfb;
+
+[zh-theme="light"] {
+
+  // 树形控件
+  .ant-tree li {
+    background-color: $light-container-bg;
+  }
+
+  // 选中效果
+  .ant-tree li .ant-tree-node-content-wrapper.ant-tree-node-selected {
+    background-color: $light-item-selected-bg;
+    color: $light-item-selected-text;
+  }
+
+  // hover效果
+  .ant-tree li .ant-tree-node-content-wrapper:hover {
+    background-color: $light-item-hover-bg;
+    color: $light-item-hover-text;
+  }
+
+  // dropdownlist选中后展示
+  .ant-select-selection--single {
+    background-color: $light-item-default-bg;
+    color: $light-item-default-text;
+  }
+
+  // dropdownlist
+  .ant-select-dropdown {
+    background-color: $light-container-bg;
+    color: $light-container-text;
+  }
+
+  // 选中项
+  .ant-select-dropdown-menu-item-active {
+    background-color: $light-item-selected-bg;
+    color: $light-item-selected-text;
+  }
+}
+
+[zh-theme="dark"] {
+
+  // 树形控件
+  .ant-tree li {
+    background-color: $dark-container-bg;
+  }
+
+  .ant-tree li .ant-tree-node-content-wrapper.ant-tree-node-selected {
+    background-color: $dark-item-selected-bg;
+    color: $dark-item-selected-text;
+  }
+
+  .ant-tree li .ant-tree-node-content-wrapper:hover {
+    background-color: $dark-item-hover-bg;
+    color: $dark-item-hover-text;
+  }
+
+  // dropdownlist选中后展示
+  .ant-select-selection--single {
+    background-color: $dark-item-default-bg;
+    color: $dark-item-default-text;
+  }
+
+  // dropdownlist
+  .ant-select-dropdown {
+    background-color: $dark-container-bg;
+    color: $dark-container-text;
+  }
+
+  // 选中项
+  .ant-select-dropdown-menu-item-active {
+    background-color: $dark-item-selected-bg;
+    color: $dark-item-selected-text;
+  }
+}

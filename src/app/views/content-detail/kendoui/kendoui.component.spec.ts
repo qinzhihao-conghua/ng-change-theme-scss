@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ContentDetailComponent } from './content-detail.component';
+import { KendouiComponent } from './kendoui.component';
 
-describe('ContentDetailComponent', () => {
-  let component: ContentDetailComponent;
-  let fixture: ComponentFixture<ContentDetailComponent>;
+describe('KendouiComponent', () => {
+  let component: KendouiComponent;
+  let fixture: ComponentFixture<KendouiComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ContentDetailComponent ]
+      declarations: [ KendouiComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ContentDetailComponent);
+    fixture = TestBed.createComponent(KendouiComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
