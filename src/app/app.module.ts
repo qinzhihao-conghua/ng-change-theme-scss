@@ -15,7 +15,7 @@ import { KendouiComponent } from './views/content-detail/kendoui/kendoui.compone
 import { NgZorroComponent } from './views/content-detail/ng-zorro/ng-zorro.component';
 import { DialogsModule } from '@progress/kendo-angular-dialog';
 import { registerLocaleData } from '@angular/common';
-import { NZ_I18N, zh_CN, NgZorroAntdModule } from 'ng-zorro-antd';
+import { NZ_I18N, zh_CN, NzButtonModule, NzTreeModule, NzSelectModule } from 'ng-zorro-antd';
 import zh from '@angular/common/locales/zh';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -40,7 +40,9 @@ registerLocaleData(zh);
     TreeViewModule,
     BrowserAnimationsModule,
     DialogsModule,
-    NgZorroAntdModule,
+    NzTreeModule,
+    NzSelectModule,
+    NzButtonModule,
     HttpClientModule
   ],
   providers: [
